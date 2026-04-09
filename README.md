@@ -1,5 +1,11 @@
 # Artifact Evaluation submission for #260 oBBR: Optimize Retransmissions of BBR flows on the Internet
 
+## IMPORTANT THINGS BEFORE RUNNING THE TESTS!!!
+```
+# add this options to quic client, as the certification is out-of-data and the https://test.bpqiang.cloud is unreachable.
+--disable_certificate_verification --host=127.0.0.1 
+```
+
 ## Introduction
 
 The goal of `oBBR` is to reduce the retransmissions of the `BBR` congestion control algorithm. It adapts the congestion window to the size of the bottleneck buffer by adjusting the `BBR` parameter `cwnd_gain` and can update  estimated bandwidth in time when the network link bandwidth drops. This artifact contains the implementation of `oBBR` and scripts for reproducing the main results of this work.
