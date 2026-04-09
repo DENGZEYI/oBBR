@@ -1,6 +1,6 @@
 # Artifact Evaluation submission for #260 oBBR: Optimize Retransmissions of BBR flows on the Internet
 
-## IMPORTANT THINGS BEFORE RUNNING THE TESTS!!!
+## !!! IMPORTANT THINGS BEFORE RUNNING THE TESTS !!!
 ```
 # add this options to quic client, as the certification is out-of-data and the https://test.bpqiang.cloud is unreachable.
 --disable_certificate_verification --host=127.0.0.1 
